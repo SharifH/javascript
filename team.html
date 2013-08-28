@@ -1,0 +1,31 @@
+<HTML>
+
+<head>
+
+<script>
+
+var favorite = ["Tigers", "Lions", "Lakers", "Sharks", "Weed", "Video Games", "Alcohol"]
+function getGetOrdinal(n) {
+   var s=["th","st","nd","rd"],
+       v=n%100;
+   return n+(s[(v-20)%10]||s[v]||s[0]);
+}
+
+
+for(i = 0; i < favorite.length; i++){
+ var ordinal = i + 1
+
+ var output = ("My " + getGetOrdinal(ordinal) + " favorite thing is " + favorite[i] + ".")
+
+console.log(output);
+}
+</script>
+
+</head>
+
+<body></body>
+
+
+</HTML>
+
+
